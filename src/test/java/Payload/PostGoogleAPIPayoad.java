@@ -7,9 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class PostGoogleAPIPayoad {
 
-	public static String addPlace()  {
-		
-		
+	public static String addPlace()  {		
 				
 		return "{\r\n" + 
 				"  \"location\": {\r\n" + 
