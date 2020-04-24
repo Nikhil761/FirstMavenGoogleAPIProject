@@ -7,10 +7,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class PostGoogleAPIPayoad {
 
-	public static String addPlace() throws FileNotFoundException {
-		FileInputStream fis=new FileInputStream("D:\\EclipseWorkspace\\GoogleAPIMaven\\src\\test\\java\\APIRequests.xlsx");
-		XSSFWorkbook workbook=new XSSFWorkbook(fis);
-		Sheet sheet = workbook.getSheet(sheetName);
+	public static String addPlace()  {
+		
 		
 				
 		return "{\r\n" + 
