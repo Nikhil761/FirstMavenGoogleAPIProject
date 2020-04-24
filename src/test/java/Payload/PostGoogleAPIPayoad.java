@@ -1,0 +1,36 @@
+package Payload;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class PostGoogleAPIPayoad {
+
+	public static String addPlace() throws FileNotFoundException {
+		FileInputStream fis=new FileInputStream("D:\\EclipseWorkspace\\GoogleAPIMaven\\src\\test\\java\\APIRequests.xlsx");
+		XSSFWorkbook workbook=new XSSFWorkbook(fis);
+		Sheet sheet = workbook.getSheet(sheetName);
+		
+				
+		return "{\r\n" + 
+				"  \"location\": {\r\n" + 
+				"    \"lat\": -38.383494,\r\n" + 
+				"    \"lng\": 33.427362\r\n" + 
+				"  },\r\n" + 
+				"  \"accuracy\": 50,\r\n" + 
+				"  \"name\": \"Frontline house\",\r\n" + 
+				"  \"phone_number\": \"(+91) 983 893 3937\",\r\n" + 
+				"  \"address\": \"29, side layout, cohen 10\",\r\n" + 
+				"  \"types\": [\r\n" + 
+				"    \"shoe park\",\r\n" + 
+				"    \"shop\"\r\n" + 
+				"  ],\r\n" + 
+				"  \"website\": \"http://google.com\",\r\n" + 
+				"  \"language\": \"French-IN\"\r\n" + 
+				"}\r\n" + 
+				"";
+	}
+
+}
+
